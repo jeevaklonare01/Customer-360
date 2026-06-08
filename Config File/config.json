@@ -1,0 +1,46 @@
+{
+  "dataset": {
+    "input_file": "formatting_data.xlsx",
+    "output_file": "cleaned_data.csv",
+    "target_variable": "Churn_Risk",
+    "proxy_features": [
+      "Total Completed Purchase Value", "Payments Successful", "Payments Attempted",
+      "Checkout Initiated", "Add to Cart Count", "Purchase Stage", "Total Orders in Time Slot",
+      "Quantity Sold", "Purchase Frequency", "Transaction Amount", "Total Units",
+      "Product Page Visits", "Page Views", "Engagement Score", "Ad_Clicks", "Impressions",
+      "Wishlist_Adds", "Product Views", "Loyalty Effect on Purchase",
+      "Repeat Purchase Rate", "Reactivated Customers (Per Campaign)", "Discount Applied",
+      "Coupon_Code_Usage", "Promotional Elasticity", "Total Floated Coupon", "Product Rating",
+      "Shelf Space Allocation", "Support Queries", "Impact of Support Quality on Repeat Purchases",
+      "Age", "Avg Order Value", "Total Revenue", "Gross Profit", "Cost per Acquisition (CPA)",
+      "Cost per Channel", "Profit Margin (%)", "Loyalty Program Member", "Newsletter Opened",
+      "Social Media Share", "Campaign_Exposure", "Churned", "Repeat_Purchase_Decline",
+      "Cart Abandoned", "Checkout Abandoned", "Payment Failure", "Return_Flag",
+      "Defective_Flag", "Subscription Cancelled", "Delivery Delays", "Return Due to Delivery Issues",
+      "Product_Issue_Reported", "Delivery Delays", "Store_ID", "POS_Transaction_ID", "Churn Reason",
+      "Defective Complaints", "COGS", "Customer ID", "Transaction Date", "Name", "Email",
+      "Zip Code", "Gender", "Language", "Reason for Delivery Delays", "Store_Location_City",
+      "Store_Location_Country", "Bounce Rate", "Return Requests", "Repeat Purchase Decline",
+      "Engagement Score", "Time Spent (min)", "Clickstream Data", "Fraud Flag", "Chargebacks",
+      "Number of Chargebacks", "Order_Fulfillment_Time"
+    ]
+  },
+  "model": {
+    "type": "XGBoost",
+    "parameters": {
+      "learning_rate": 0.1,
+      "max_depth": 4,
+      "n_estimators": 100,
+      "scale_pos_weight": 9
+    }
+  },
+  "clustering": {
+    "n_clusters": 4,
+    "random_state": 42
+  },
+  "propensity": {
+    "feature": "Purchase_Frequency",
+    "method": "min_max",
+    "output_column": "propensity_score"
+  }
+}

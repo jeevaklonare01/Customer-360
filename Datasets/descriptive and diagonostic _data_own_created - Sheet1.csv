@@ -1,0 +1,291 @@
+KPI Name (Executive Summary),Dataset  used,       COLUMN USED, Formula Used ,,,
+TOTAL CONSUMERS, Own Site ,  Customer _ID,  Sum Of (Consumers),,,
+New consumer MoM (Month over month ) Growth," E-commerce, Retail,Own Site "," Transaction _Amount, Transaction_Date  ",(Current Month-Previous Month) / Previous Month *100,,,
+Repeat Purchase Rate ," Retail , Own Site ","Repeat _Purchase _Rate , Purchase History ",(Returning Customers / Total Consumer)*100,,,
+churn rate,"E-commerce , Retail , Own Site ","Churn Risk, Churn Status, Last_Transaction_Date,Churned",Total Completed Purchase Value-Quantity Purchased/Total Orders in Time Slot*100,,,
+Customer LifeTime Value (CLV),  E-Commerce,"First_Transaction_Date , Last_Transaction_Date,purchase Frequency, Average_Order_value",(Average Order Value*Purchase Frequency)* Custmer Lifespan,,,
+Average Order Value (AOV),"Own Site , E-commerce", Average _Order _Value,Total Revenue / Total Orders ,,,
+Net promoter Score (NPS)," Own Site, E-Commerce","Product Review , Product  Rating",%Promoters -%Detractors ,,,
+Cart Abandonment Rate,E-Commerce ,Cart _ Abandonment _Rate ,(Cart Abondonment /Carts Created )*100,,,
+Geo - wise Consumer Disribution ," Own Site, E-Commerce,Retail "," Location ,Delivery_Location_City , Store_Location_City",(Consumer in region / Total Consumers)*100,,,
+Channel preferences (% Share),"Own Site , E-commerce"," Referral_ Source, Traffic_Source",( Sales From channel / Total Sales )*100,,,
+Consumer Segmentation ,"Own Site, Retail","    Age , Customer Segment", ( Customers In Segment / Total Customer) *100,,,
+Purchase Frequency Trend ,   E- Commerce,"Purchase Frequency , Category",(Total Orders in Quarter/ Total Customer in Quarter)*100,,,
+,,,,,,
+,,,,,,
+KPI NAME (Category  Summary),Data Set Used , Column Used ,Formula Used ,,,
+Top performing Categories,E-Commerce ,"Purchase History , Previous Category ",(Total Completed Purchase Value-Quantity Purchased) /Total Orders in Time Slot,,,
+Category with Highest  (YoY) Growth,E-Commerce ,"  Transaction_ Amount , Transaction_Date , Category",(Current Year Sales - Previous Year Sales) / Previous Year Sales*100,,,
+Most  Purchased Product In Category , Own Site ,   Product _Purchased , Maximum (Unit/Product Sold),,,
+Category Contribution to Revenue ,  Retail ," Category , Category _Share_ In_Retailer_ Sales",Sales Growth Rate for Region=(Sales In Current Period - Sales In previous Period)/ Sales In previous Period,,,
+Category-wise Purchase Frequency, Retail ,    Transaction_Date ,Purchase Per 100 Customer= Total Orders/ Total Unique Customers*100,,,
+Category Switching Behavior, Own Site ,"Churned , Customer_ID, Transaction _Date , Previous Category", (Customers Who Switched Categories / Total Customers)*100,,,
+Category Wise Average Order Value (AOV)," Own Site , E-commerce",  Average_Order_Value,Average Order Value (AOV)=Total Revenue / Total Orders,,,
+ Top Consumer Segments per Category, Retail ,"  Consumer_ Segment , Categories",(Segment Purchases / Total Purchases)*100,,,
+Profit Margin % ,Own Site , Profit Margin (%), (Profit / Revenue)*100,,,
+,,,,,,
+KPI NAME ( Regional Summary ),Data Set Used, Column Used,Formula Used,,,
+Top Revenue Region ,"Retail Data , Own Site","Total _Revenue , Region",Top Revenue Region=Region with Maximum Revenue,,,
+Highest Repeat Customers ,   Own Site,"Purchase History , Purchase _Count"," Repeat Purchase = Total Purchases / Total Time Period (in month ,years, etc.)",,,
+Highest  New Customers ," Own Site , Retail ","Total Revenue , Total Purchases , Customer_ ID","Highest New Customer= Max (N1,N2,......,N(t) where (N1,N2,......,N(t) are the number of new customers ",,,
+Average Order Value ( AOV) & Basket Size By Region ," Own Site , E-commerce","Order _ID , Product Category , Avg Order Value"," AOV=Total Revenue / Total Number Of Orders, Basket Size=Total No. Of Item Sold/Total No. Of Orders",,,
+Sales Trend By Region ,   E-Commerce ,"  IP_Region ,  Order_ID",Sales Growth Rate for Region=(Sales In Current Period-Sales in Previous Period)/Sales in Previous Period*100,,,
+customer Composition By Region ," Own Site , E-commerce"," IP_Region , Customer Composition",Customer Composition by Region (%) = Numbers Of Customers in Region / Total Numbers Of Customers *100,,,
+Region Wise Sales Performance ,  data_own_site," Region,Region-wise Revenue , Profit Margin (%)","Total Sales in Region=∑(Sales for each transaction in the region),Sales Growth %=  Sales in Previous Period (Sales in Current Period−Sales in Previous Period) ​  ×100",,,
+,,,,,,
+KPI NAME  ( Channel Summary),Data Set Used,Coumn Used,Formula Used,,,
+Top Revenue Generating Channel,"Retail_data ,   data_own_site,E-com"," Total_Revenue ,  Profit Margin , Revenue Trend,Quality Purchased,Rate Of Refund , Price Paid ","Revenue for Channel=Units Sold×Price per Unit , Total Revenue=∑Revenue for each Channel",,,
+Channel With Highest (Average Order Value) AOV,"Retail_data ,   data_own_site,E-com","
+Avg Order Value , Total_Revenue , Quantity_Sold , Transaction_ID","AOV for Channel=Total Revenue for Channel /  Number of Orders for Channel , AOV=Total Revenue/Number Of Orders",,,
+Highest Growth Channel  (MoM %),"Retail Data , E-commerce","Total Revenue , Discount, Last Transaction Amount , Quality Purchased, Price Paid ",MoM Growth (%)= Revenue in Current Month−Revenue in Previous Month/Revenue in Previous Month ​*100,,,
+Sales Split By Channel ,"Retail Data , E-commerce,Own Site","  Total Revenue , Discount , Quality Purchased ,Price Paid  ,Total _Revenue ",Sales Split by Channel (%)=Revenue from Channel ​/ Total Revenue *100,,,
+Repeat Purchase Rate Per Channel , Retail Data, Repeat Purchase Rate ,Repeat Purchase Rate = Number of Customers with More Than One Purchase / Total Number of Customers *100,,,
+Avg. Basket Size Per Channel, Retail Data, Basket Size ,Average Basket Size (Per Channel)= Total Number of Items Sold / Total Numbers Of Orders ,,,
+Marketing Effectiveness Per Channel,"Retail Data , Data_Own_Site","Revenue from Channel , Total Revenue , In_Store_Advertising_Effectiveness ",Marketing Effectiveness = Revenue Generated by Channel / Marketing Spend For Channel *100,,,
+,,,,,,
+KPI NAME (Consumer Behavior Insights),Data Set Used,Column Used ,Formula Used,,,
+Most Engaged Consumer Segment ," Retail Data,E-Commerce,Own Site"," Consumer Segment, Product View, Ad Clicks, Impressions,Age, Page View,Time Spent,Engagement Score",Engagement Score=(Purchase Frequency)+(Interaction with Campaigns)+(Time Spent on Website) ​,,,
+Highest Spending Consumer  Segment ,"Retail Data,E-Commerce,Own Site","Category, Quantity Sold, Total Revenue , Click Stream Data, Average_Order_Value","Total Spend for Segment=∑(Total Spend per Customer in Segment), Total Spend for Segment=Total Spend per Customer×Number of Customers in Segment",,,
+Top Cross Purchased Product ,Retail Data,  Cross Purchased Products,Cross Purchase Frequency=Count of Customers who Bought Product A and Product B Together,,,
+Cart Abandonment Rate , E-Commerce,"Cart Abandonment , Total Completed Purchase Value",Cart Abandonment Rate=Number of Carts Created−Number of Purchases Completed/Number of Carts Created *100,,,
+Time Of Day Analysis ,"E-Commerce, Data_Own_Site","Transaction Date,  Total Order In a Time Slot, Transaction_Date",Metric for Time of Day=Total Value of Metric for Specific Time Slot / Total Value of Metric for All Time Slots*100,,,
+Promo Sensitivity ,  Data_Own_Site,   Promo Elasticity ,Promo Sensitivity=Sales During Promotion / Sales During Non-Promotion *100,,,
+,,,,,,
+KPI NAME (Consumer Sentiment Analysis ),Data Set Used ,Column Used ,Formula Used,,,
+Over All Sentiment Score ,"data_own_site, E-Commerce","  Clickstream Data, Ad_Clicks",Overall Sentiment Score=∑Sentiment Scores of Words Or Sentences / Total Number of Words or Sentences,, ,
+Most Positive Reviewed Product ,"data_own_site, E-Commerce","Product Reviews,Survey Response,Product_Ratings, Ad_Clicks, Survey Response",Average Sentiment Score for Product=∑Sentiment Scores of Reviews for Product ​/ Total Number of Reviews for Product,,,
+Most Negative Reviewed Product ,"data_own_site, E-Commerce","Product Reviews,Survey Response,Product_Ratings, Ad_Clicks, Survey Response", Most Negative Product=argmin(Overall Scores of All Products),,,
+ Positive Vs Negative Reviews,"data_own_site, E-Commerce","Product Reviews,Survey Response , Product Rating","Positive to Negative Ratio=P/N ,T=Total number of reviews,P=Number of positive reviews, N=Number Of Negative reviews",,,
+Social Media Engagement ,"data_own_site, E-Commerce"," Social Media Share , Device Type,Device_Type, Ad_Clicks",Engagement Rate=Total Engagements /  Total Followers or Impressions *100,,,
+Most Discussed  Products ,Data Own Site ,Product Review,"Product Discussion Score=Number of Mentions+Number of Interactions (Likes, Comments, Shares)+Sentiment Score",,,
+,,,,,,
+KPI NAME ( Loyalty & Retention Analysis ),Data Set Used,Column Used,Formula Used,,,
+Loyalty Program Participation,"Retail Data , Data Own Site","Retailer Loyality, Loyality program Member",Loyalty Program Participation Rate=(Number of Active Members / Total Number of Eligible Customers )*100,,,
+Redemption Rate(Numerator and denominator), E-Commmerce,"Coupon Code, Total Floated Coupons",Redemption Rate=(Total Redemptions /Total Rewards Earned)*100,,,
+Top Benefit Used in Loyalty Program, Data Own Site,"Discount Used , Loyality Effect On Purchase",Top Benefit Usage Rate=(Total Usage of Top Benefit /Total Rewards Earned)*100,,,
+Churn Rate by Segment,"Retail Data , Data Own Site,E-comm"," Retailer Loyality Program,Churned Status, Churn Risk , Churned Status, Churned ",Churn Rate by Segment=(Customers Lost in Segment / Total Customers in Segment at the Start of Period)*100,,,
+How to Calculate Premium and Win Back Compaign  Sucess Rate ,"Retail Data , Data Own Site,E-comm","Churned Status, Reactivated Customer (Per Campaign), Churned Status, Churned",Premium Campaign Success Rate (%) =(Number of Premium Conversions/Number of Campaign Participants or Targets)*100,,,
+,,,,,,
+KPI Name {Profit and Loss (Pand L) }Summary ,Data Set Used,Column Used ,Formula Used,,,
+"Total Revenue, Gross Profit, Net Profit","Data_own_site,Retail Data","Total Revenue, Gross Profit,Net Profit","Total Revenue=Price per unit×Quantity sold,Gross Profit=Total Revenue−Cost of Goods Sold (COGS), Net Profit=Total Revenue−Total Expenses",,,
+Cost of Goods Sold (COGS),Data_own_site,"Cost of Goods Sold (COGS),Total Revenue, Gross Profit , Net Profit",COGS=Beginning Inventory+Purchases during the period−Ending Inventory,,,
+Operating Expenses,Data_own_site," Operating Expenses , Total Revenue, Gross Profit, Net Profit", Operating Expenses=Total Expenses−Non-Operating Expenses,,,
+Profit Margin (%),Data_own_site,"Profit Margin (%),  Total Revenue, Net Profit , Revenue Trend", Profit Margin(%)= ( Net Profit / Revenue) *100,,,
+Revenue Trend Over Time,"E-Commerce Data,Retail Data","Total Revenue , Categories,Total_Revenue",Revenue Trend Over Time=(Revenue in Current Period−Revenue in Previous Period)/Revenue in Previous Period*100,,,
+Expense Breakdown, Data Own Site ,"Categories , Percentage","Total Expenses=∑(Individual Expense Categories), Individual Expense Categories=Fixed Costs+Variable Costs+Miscellaneous Costs",,,
+Gross vs. Net Profit Trend, Data Own Site ,,"Gross Profit=Revenue−Cost of Goods Sold (COGS) , Net Profit=Revenue−(COGS+Operating Expenses+Interest+Taxes)",,,
+Region-wise Revenue Contribution, Data Own Site ,,Region-wise Revenue Contribution= (Revenue from Region / Total Revenue)*100,,,
+Top Cost Drivers, Data Own Site ,," Cost Driver Impact=Change in Total Cost ​/  Change in the Cost Driver , Total Cost = (Unit Cost × Quantity) + Fixed Costs",,,
+,,,,,,
+,,,,,,
+KPI Name  ( Additional  Consumer 360 Insights),Data Set Used,Column Used ,Formula Used,,,
+Age Group Distribution ,,,Percentage of Age Group=(Number of People in Age Group / Total Population)*100,,,
+Gender Ratio,,,Gender Ratio= (​Number of Males / Number of Females )*100,,,
+Income Level Breakdown ,,,Tax=  i=1 ∑ n ​  (Rate  i ​  ×Income in Bracket  i ​) where Rate (i)is the tax rate for each bracket. Bracket (i)is the portion of income that falls within each bracket,,,
+Age And Gender Split ,,,Age Group Percentage=(Number of individuals in a specific age group/ Total population or dataset size)*100,,,
+Income  Level Distribution ,,,"P(X≥x)=X(m)^α Pareto Distribution , f(x)=αx^α(m)/ x^α+1    forx≥x  m ​  probability density function",,,
+Geographic Consumer Spread ,,,Geographic Consumer Spread=(Consumers in a specific geographic area/Total number of consumers in the entire region or target market) *100,,,
+,,,,,,
+ KPI Name  {Customer Acquisition Cost (CAC)}, Data Set Used,Column Used,,,,
+Cost Per Acquisition (CPA),Data_own_site,Cost Per Acquisition, Formula Used,,,
+ Cost Per Channel,Data_own_site,"Referral Source , Cost Per Channel ",CPA= (Total Cost of Campaign / Number of Acquisitions or Conversions),,,
+ROI On Marketing Spend,Data_own_site,ROI On Marketing Spend,Cost Per Channel= Total Cost of Channel / Number of Conversions or Leads from that Channel,,,
+CAC Trend Over Time ,Data_own_site,"Cost Per Acquisition, Transaction Date",ROI on Marketing Spend = Revenue from Marketing−Cost of Marketing/ Cost of Marketing*100,,,
+CAC By Channel,Data_own_site,"Cost Per Acquisition,Referral Source","CAC  by Channel ​  =Total Costs for Channel / Total New Customers from Channel , Customer Acquisition Cost (CAC) ",,,
+ROI Per Campaign,Data_own_site,"Referral Source , ROI On Marketing Spend",ROI= (Revenue from Campaign−Cost of Campaign ​/Cost of Campaign )*100,,,
+,,,,,,
+KPI Name (Customer Journey Mapping),Data Set Used,Column Used ,Formula Used,,,
+Most Common Touch Points,,,"Touchpoint Impact=Conversion Rate / Total Touchpoint Interactions,Touchpoint Analysis (Customer Experience Analytics)",,,
+Average Time To Conversion ,,,Average Time to Conversion=Total Time from First Interaction to Conversion / Number of Conversions,,,
+Journey Flow from Awareness to Purchase ,,,Awareness → Interest → Consideration → Intent → Evaluation → Purchase → Post-Purchase/Retention,,,
+Drop-off Rates at Each Stage,,,Drop-Off Rate= (Number of Customers Lost at the Stage ​/Number of Customers Entering the Stage)*100,,,
+,,,,,,
+KPI Name (Drop-off & Abandonment Analysis),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Cart Abandonment Rate, E-Commerce Data,"Cart Abandonment,Total Completed Purchase Value",Cart Abandonment Rate=(Number of Carts Created−Number of Completed Purchases /Number of Carts Created )*100,(Total Completed Purchase not in the data),, It measures the percentage of users who add items to their shopping cart but then leave the website without completing the purchase.
+Checkout Abandonment Rate,Data_own_site,"  Page Views , Time Spent", Checkout Abandonment Rate=(Number of Carts that Reached Checkout−Number of Completed Purchases/Number of Carts that Reached Checkout)*100​  ,,,checkout abandonment helps to identify barriers within the final stages of the purchasing process and provides insights into where customers may be losing interest or encountering issues.
+Payment Failure Rate,Data_own_site,"  Page Views , Time Spent",Payment Failure Rate=(Number of Failed Payments/Total Number of Payment Attempts)*100,,,The Payment Failure Rate (PFR) measures the percentage of payment attempts that fail during the checkout process.
+Product Page Bounce Rate,Data_own_site,"  Page Views , Time Spent","Product Page Bounce Rate=(Single - page Visits/Total Visits) ×100
+",,,"The Product Page Bounce Rate measures the percentage of visitors who land on a product page but leave the website without interacting with other pages, such as adding items to the cart or exploring other products."
+Drop-off Trend Over Time,"Data_own_site,E-commerce data","Awareness Stage,Consideration Stage,Intent Stage,Purchase Stage,Transaction Date ",Drop-off Rate=(Users at Step N−Users at Step N+1/Users at Step N) ×100,,,"The Drop-off Trend Over Time is a critical metric in understanding how user behavior changes over a specific period. It tracks the rate at which users leave (or ""drop off"") at various stages of your website or app funnel (such as product pages, checkout, form submission, etc.)"
+Drop-off by Consumer Segment,"Data_own_site,E-commerce data","Awareness Stage,Consideration Stage,Intent Stage,Purchase Stage,Purchase Frequency",Drop-off Rate by Segment=(Users at Step N for Segment−Users at Step N+1 for Segment/Users at Step N for Segment)×100,,,"Drop-off by Consumer Segment is an important diagnostic metric for understanding how different groups of users behave at various stages of the user journey and identifying where certain segments are more likely to abandon the process (e.g., checkout, registration, etc.)."
+Conversion Funnel Analysis,"Data_own_site,E-commerce data","Awareness Stage,Consideration Stage,Intent Stage,Purchase Stage,Purchase Stage,Aware Stage","Conversion Rate between Step N and Step N+1= (Users at Step N+1/Users at Step N ) ×100,Conversion Rate Between Funnel Stages",,,"Conversion Funnel Analysis is a critical diagnostic tool for understanding the steps users take to complete a desired action on your website or app (like making a purchase, signing up for a service, or filling out a form)."
+Cart Abandonment by Device Type,E-Commerce data,"Cart Abandonment,Total Completed Purchase Value,Device Type",Cart Abandonment Rate by Device={Carts Abandoned (Device Type) ​/ Carts Created (Device Type)}×100,,,"Cart Abandonment by Device Type is a crucial diagnostic metric that helps you understand how different devices (e.g., desktop, mobile, tablet) impact users' likelihood to abandon their carts before completing a purchase."
+,,,,,,
+KPI Name (Churn & Retention Issues),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Churn Rate by Consumer Segment,"Retail Data,E-commerce,Data_ own_ site","Retailer Loyalty Program,Churned Status,Churned Risk,Churned_Status,Loyalty Program Member",Churn Rate by Consumer Segment=(Number of Customers Lost in the Period/Number of Customers at the Start of the Period) ×100,,,Churn Rate by Consumer Segment is an essential diagnostic metric for understanding the rate at which different groups of customers stop using your product or service. By analyzing churn across various consumer segments
+Avg. Time Between Purchases,,,Average Time Between Purchases= Total Time Period/Total Number of Purchases−Number of Customers who Made Only One Purchase,,,Average Time Between Purchases is a valuable diagnostic metric that helps you understand the typical frequency with which customers make repeat purchases on your platform.
+Repeat Purchase Decline (%),,,Repeat Purchase Decline (%)=(Repeat Purchase Rate at the Start−Repeat Purchase Rate at the End/Repeat Purchase Rate at the Start) ×100,,,"Repeat Purchase Decline (%) is a crucial diagnostic metric that measures the percentage of customers who no longer make repeat purchases over a certain period, compared to those who previously made multiple purchases."
+Loyalty Program Drop-off Rate,"Retail Data,E-commerce,Data_ own_ site","Retailer Loyalty Member,Transaction Date,Loyalty Program Member,Transaction Date",Drop-off Rate=(Number of Customers Lost/Total Number of Customers at the Start of the Period )×100,,,The Loyalty Program Drop-off Rate is a diagnostic metric that measures the percentage of customers who sign up for your loyalty program but stop engaging with or making use of it over a given period.
+Retention Rate by Region,"Retail Data,E-commerce,Data _own _site","Churned Status,Store Location,Churned Status,Churn Risk,Delivery Location,Churned,Location",Retention Rate by Region=(Number of Customers at the End of the Period in Region/Number of Customers at the Start of the Period in Region) ×100,,,The Retention Rate by Region is a diagnostic metric that measures how well your business retains customers in different geographical regions. It shows how effectively you are maintaining your customer base in specific areas and highlights regional differences in customer loyalty.
+Churn Reasons (Survey-Based),"Retail Data,E-commerce,Data_ own_ site","Churned Status,Churn Risk,Churned Status,Churned,Support Queries",Churn Reason Percentage=(Number of customers citing a specific reason/Total number of customers surveyed )×100,,,"The Churn Reasons (Survey-Based) is a diagnostic metric that gathers direct feedback from customers who have stopped doing business with your brand, typically through exit surveys or post-churn surveys."
+Win-Back Campaign Effectiveness,"Retail Data,E-commerce,Data_ own_ site","Churned Status,Reactivated Customer (Per Campaign),Churned Status,Churn Risk,Churned,Reactivated Customers",Win-Back Rate=(Number of customers regained through the campaign/Total number of targeted churned customers)×100,,,The Win-Back Campaign Effectiveness metric helps assess how successful your efforts are in re-engaging and retaining customers who have previously churned or become inactive. 
+Subscription Cancellation Trend,,,"Cancellation Rate (CR)=Number of Cancellations in the Period/Total Active Subscriptions at the Start of the Period,CT=CR  t ​  −CR  t−1 ​/CR  t−1 ​×100",,,The Subscription Cancellation Trend is a diagnostic metric that tracks patterns and changes in the number or rate of cancellations within a subscription-based business model. 
+,,,,,,
+ KPI Name (  Pricing & Discount Impact ),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Avg. Discount Utilization Rate,"Retail Data,E-Commerce,Data_Own_Site"," Discounts Applied,Discount Used, Discount Used",Average Discount Utilization Rate=(Total Value of Discounts Used/Total Value of Discounts Offered) ×100,,,The Average Discount Utilization Rate (ADUR) is a diagnostic metric used to measure how frequently customers use discounts or promotional codes during their purchases. 
+Price Sensitivity Index,,,Price Sensitivity Index (PSI)= (Percentage Change in Quantity Sold / Percentage Change in Price) ​,need % change in demand and price,,The Price Sensitivity Index (PSI) is a diagnostic metric that helps businesses understand how sensitive their customers are to price changes. It indicates the degree to which a price change (increase or decrease) will affect customer demand or purchasing behavior. 
+Most Abandoned Discounted Product,E-commerce Data,"Cart Abandonment,Total Completed Purchased  Value,Product Name",Product Abandonment Rate (PAR) Formula=(Abandoned Products/Viewed or Added to Cart Products)×100,,,The Most Abandoned Discounted Product is a diagnostic metric that identifies which products that have been discounted are most frequently abandoned by customers during the shopping or checkout process. 
+Elasticity of Demand (Price vs. Volume Sold),E-commerce Data,"Cart Abandonment,Total Completed Purchased  Value,Product Name",Price Elasticity of Demand (PED) Formula  E (d) ​= (% Change in Quantity Demanded / % Change in Price),need%change in price and demand,,Elasticity of Demand (Price vs. Volume Sold) is a critical diagnostic metric that helps businesses understand how the price of a product or service impacts the volume of sales or demand.
+Discounted vs. Non-Discounted Sales,"Retail Data,E-Commerce,Data_Own_Site","Discounts Applied,Total Revenue,Discounts Used,Quantity Purchased,Price Paid,Discount Used","Non-Discounted Sales=Quantity Sold×Original Price , Discounted Sales=Quantity Sold×(Original Price−(Original Price×  100 Discount Percentage ​  ))",,,The Discounted vs. Non-Discounted Sales metric helps businesses assess how well their products perform when offered at a discount versus when they are sold at their full price.
+Discount Effect on Repeat Purchase,"Retail Data,E-Commerce,Data_Own_Site","Repeat Purchase Rate,Discounts Applied,Discount Used,Discount Used",RPR  discount ​=Number of Repeat Purchases with Discount/Number of Customers who Received the Discount ,,,"The ""Discount Effect on Repeat Purchase"" needs to be diagnosed for several important reasons related to business strategy, customer behavior, and overall profitability. Understanding this effect helps businesses make more informed decisions on pricing, marketing, and customer retention strategies."
+Price vs. Conversion Rate,,,Conversion Rate=(Number of Conversions ​/ Number of Visitors) ×100  ,,,"The relationship between Price and Conversion Rate is a critical area of analysis for businesses, particularly when it comes to pricing strategies and sales optimization. A diagnostic approach in this context involves understanding how changes in price impact the likelihood of a customer completing a purchase (i.e., conversion)."
+ Discount Redemption Trend,"Retail Data,E-Commerce,Data_Own_Site","Discounts Applied,Discount Used,Transaction Date,Discount Used,Total Coupon Floated",Discount Redemption Rate=(Number of Discounts Redeemed/Total Number of Discounts Issued Or Available) ×100,,,The Discount Redemption Trend refers to the pattern or behavior of how customers use or redeem discounts over time. This diagnostic is important because it helps businesses understand the effectiveness of their discount strategies 
+,,,,,,
+ KPI Name ( Product Performance Issues ),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Products with Highest Return Rate,E-Commerce Data,Return Refund Rate,Return Rate=(Number of Returns/Number of Units Sold) ×100,,,"Diagnosing Products with the Highest Return Rate is a crucial aspect of business analysis because it helps identify potential issues related to product quality, customer expectations, or the purchasing process."
+ Top Underperforming Products,E-Commerce Data,"Return Refund Rate,Product Name",Underperformance Score= (Actual Sales/Target Sales) ×100,,,"Top Underperforming Products is a critical part of understanding where a business may be losing potential revenue, where products are not meeting expectations, or where there are inefficiencies in the sales process. "
+Out-of-Stock Rate,Retail Data, Stock Availability,Out-of-Stock Rate=(Number of Stockout Events/Total Number of Possible Stock Events) ×100,,," Out-of-Stock (OOS) Rate is a critical aspect of inventory and sales management. It helps businesses understand how often products are unavailable for purchase, the impact of stockouts on sales and customer satisfaction, and whether there are inefficiencies in inventory management or forecasting."
+Most Reported Product Issue,,,"Occurrences of Issue=Count of Specific Issue Reports,Most Reported Issue=Issue with Maximum Occurrences",,,"The most reported product issues often require diagnostic efforts to ensure they are properly identified, addressed, and resolved. Commonly reported issues tend to fall into a few categories, and diagnostic processes are essential for understanding the root causes behind them. "
+Return Rate by Product Category,E-Commerce,"Return Refund Rate,Category",Return Rate by Product Category=(Number of Returns in Category/Total Number of Products Sold in Category) ×100,,,"When analyzing return rates by product category, diagnostics play a crucial role in understanding why products are being returned and how to reduce those returns. A high return rate in any product category indicates that there may be issues with the product"
+Stock-Out Events Over Time ,"Retail Data,E-Commerce,Data_Own_Site","Stock Availability, Total Order In a Time ",Formula for Stock-Out Events rate=Number of Stock-Out Events ​/ Total Time Period,,,"Analyzing stock-out events over time is crucial for maintaining efficient inventory management and ensuring that products are available when customers need them. A stock-out occurs when a product is out of stock, meaning demand exceeds available inventory."
+Defective Product Complaints,,,Defective Product Complaints Rate=(Number of Defective Complaints / Total Number of Products Sold) ×100,,," defective product complaints is an essential process for identifying and resolving issues related to product quality. Complaints about defective products can significantly impact customer satisfaction, brand reputation, and overall business performance. "
+Demand-Supply Gap Analysis,,,Formula for Demand-Supply Gap= Demand−Supply,,,"A demand-supply gap analysis helps businesses understand discrepancies between customer demand for a product or service and the available supply. Analyzing this gap is crucial for identifying inefficiencies in inventory management, production planning, and overall supply chain processes."
+,,,,,,
+KPI Name ( Channel-Specific Performance Issues),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Highest Cart Abandonment Channel,"E-Commerce,Data_Own_Site","Cart Abandonment,Total Completed",Cart Abandonment Rate for Channel=(Carts Abandoned in Channel / Carts Created in Channel) ×100,,," Identifying the highest cart abandonment channel helps businesses understand where they are losing customers in their sales funnel and enables targeted efforts to improve conversion rates.  A cart abandonment channel refers to the different platforms, devices, or touchpoints where customers are abandoning their carts. "
+Channel with Most Customer Complaints, Data_Own_Site,"Support Queries, Device Type",Complaints Rate for Channel=(Number of Complaints in Channel ​/ Total Interactions in Channel) ×100,,,"Understanding which channel is generating the most customer complaints is crucial for businesses to address pain points, improve customer experience, and maintain a positive brand image. "
+Channel with Declining Sales,"E-Commerce,Data_Own_Site,Retail Data","Total Revenue,Discount,Last Transaction Date","Declining Sales Formula = S ( t) ​  =S (0) ​  ×(1−r) ^t , S (t) ​= Sales at time 𝑡 , S (0) ​= Initial sales at time 0 , r = Decline rate, t = Time period ",,,"When sales begin to decline, identifying the channel with declining sales is critical for businesses to take corrective actions. Sales channels can range from online platforms (e-commerce, social media, paid ads) to physical stores, third-party platforms, or even B2B partnerships."
+Avg. Order Processing Time by Channel,,,"Formula for Average Order Processing Time by Channel: 𝐴 𝑂 𝑃 𝑇 =n ∑  i=1 ,n ​(T i ​) ​/ n, T(i) ​= Time taken to process the i-th order, n = Total number of orders processed in the channel over a specific period",,,"Understanding the Average Order Processing Time by Channel is crucial for businesses to streamline their operations, improve customer satisfaction, and optimize their order fulfillment process. The order processing time refers to the time it takes from receiving an order to shipping it out or delivering it"
+Conversion Rate by Channel,"E-Commerce,Data_Own_Site","Awareness Stage,Purchase Stage",Conversion Rate by Channel=(Number of Conversions from Channel / Number of Visitors from Channel ) ×100 ​  ,,,"The conversion rate by channel is a critical metric that measures the percentage of visitors or customers who take a desired action (e.g., making a purchase, signing up for a newsletter, or filling out a form) on each of your sales channels."
+Fulfillment Delays by Channel,"E-Commerce,Data_Own_Site","Order Fulfillment,Device Type",Fulfillment Delay by Channel=∑(Actual Fulfillment Time−Expected Fulfillment Time) ​/ Total Orders Processed via the Channel,,,"Fulfillment delays can significantly impact a business's reputation, customer satisfaction, and bottom line. A delay in fulfilling customer orders means a delay in getting products to customers, which can lead to frustration, increased return rates, and lost revenue. "
+Channel-Specific NPS Score,Data_Own_Site,"Survey Response,Device Type", NPS (Channel)=%Promoters (Channel)−%Detractors (Channel),,,"The Net Promoter Score (NPS) is a widely-used metric that gauges customer loyalty and satisfaction by asking customers a single question: “On a scale of 0-10, how likely are you to recommend our company/product/service to a friend or colleague?” Based on their response, customers are categorized"
+Customer Complaints Trend by Channel,Data_Own_Site,"Support Queries,Device Type,Transaction date",Complaints Trend by Channel (%) =(Complaints for the Channel at Time Period t / Total Complaints for All Channels at Time Period t) ×100,,,"Tracking and analyzing customer complaints by channel is an essential step in understanding customer dissatisfaction and identifying areas for improvement. By examining complaints over time, businesses can pinpoint which channels are consistently problematic, uncover recurring issues, and take corrective actions. "
+,,,,,,
+KPI Name (Customer Service & Satisfaction Issues),Data Set Used,Column Used ,Formula Used,,,Why Needed In Diagonostic
+Avg. Response Time (Customer Support),,,Average Response Time= (Total Time to Respond to All Inquiries / Total Number of Inquiries) ,,,Average Response Time is a key performance indicator (KPI) that measures how long it takes for customer support teams to respond to a customer inquiry or request. It's critical for understanding the efficiency of your support team and the customer experience. 
+Avg. Resolution Time (Support Tickets),,,Average Resolution Time= (Total Time Taken to Resolve All Tickets / Total Number of Resolved Tickets ),,,"Average Resolution Time is a key performance indicator (KPI) that measures how long it takes, on average, for customer support teams to fully resolve an issue or close a support ticket after it has been opened."
+% of Unresolved Complaints,,,Percentage of Unresolved Complaints=(Number of Unresolved Complaints / Total Number of Complaints) ×100,,,The % of Unresolved Complaints is an important performance metric that helps businesses measure the percentage of customer complaints that remain unresolved over a given period. 
+Most Common Complaint Category,Data_Own_Site, Support Queries,Complaint Frequency= (Number of Complaints in a Category / Total Number of Complaints) ×100,,,"Identifying the Most Common Complaint Category is essential for businesses to understand where they need to improve their products, services, or processes. Analyzing this data helps prioritize actions, allocate resources, and develop strategies for addressing frequent issues."
+Ticket Resolution Time Trend ,,,Ticket Resolution Time=  ( ∑Time to Resolve Each Ticket ​/ Number of Tickets Resolved),,,
+Complaint Category Distribution,Data_Own_Site,  Support Queries,Complaint Category Distribution=(Number of Complaints in a Category / Total Number of Complaints) ×100,,,
+Customer Satisfaction Score Trend,Data_Own_Site," Product Reviews , Transaction Date ",Customer Satisfaction Score (CSAT) Trend=(Number of Satisfied Customers/Total Number of Survey Responses) ×100,,,
+Impact of Support Quality on Repeat Purchase,"Data_Own_Site,Retail Data",,Impact of Support Quality on Repeat Purchase=(Repeat Purchase Rate (RPR) for High-Quality Support/Repeat Purchase Rate (RPR) for Low-Quality Support) ×100,,,
+,,,,,,
+ KPI Name ( Marketing & Campaign Effectiveness Issues),Data Set Used,Column Used ,Formula Used,,, #points need
+Ad Click-Through Rate (CTR),E-Commerce Data,"Ad Clicks , Impressions","Click-Through Rate (CTR) =(Total Clicks / Total Impressions) ×100,Total Clicks: The total number of clicks on the ad,Total Impressions: The total number of times the ad was displayed",,,
+Marketing ROI (Per Campaign),Data_Own_Site,"ROI On Marketing Spend , Reactivated Customers (Per Campaign)",Marketing ROI=(Revenue from Campaign−Marketing Costs / Marketing Costs ​) ×100,,,
+Engagement Drop in Email Campaigns,,,Engagement Drop=(Engagement at Time 1−Engagement at Time 2 / Engagement at Time 1) ×100,,,open Rate needed
+% of Traffic from Paid vs. Organic, E-Commerce,Traffic Source,"Paid Traffic %=(Paid Traffic/Total Traffic)×100 , Organic Traffic %=(Organic Traffic/Total Traffic) ​×100  ",,,
+Ad Spend vs. Conversions ,,,Cost Per Conversion (CPC)= Total Ad Spend / Total Conversions​  ,,,"needed Ad spend , Conversion"
+Channel-Specific Marketing ROI,Data_Own_Site," ROI On Marketing Spend , Device Type",Channel-Specific ROI=(Revenue from Channel−Marketing Costs for Channel / Marketing Costs for Channel) ×100 ​  ,,,
+Consumer Engagement by Campaign Type,,,Engagement Rate=​ (Total Interactions for Campaign Type/Total Reach for Campaign Type) ×100 ,,,Engagement Rate needed
+Conversion Rate by Traffic Source,,,Conversion Rate by Traffic Source= (Conversions from a Specific Traffic Source/Total Visitors from that Traffic Source) ×100 ​  ,,,Total Conversion needed
+,,,,,,
+KPI  Name(Logistics & Delivery Failures ),Data Set Used,Column Used ,Formula Used,,,
+Avg. Delivery Time,,,Average Delivery Time= Total Delivery Time / Number of Deliveries,,,
+Late Deliveries (%),,,Late Deliveries (%)=(Number of Late Deliveries/ Total Number of Deliveries) ×100,,,
+Top Reason for Delivery Delays,,,Delivery Delay Causes = (External Factors + Internal Factors),,,
+Warehouse Processing Time,,,Warehouse Processing Time Formula= Total Time Spent on Processing Orders ​/ Number of Orders Processed,,,
+Delivery Delay Trends Over Time,,,Average Delivery Delay (AD) t ​= ∑ i=1 n(t) ​ Delay Time (i) / N(t),,,
+Warehouse Bottlenecks,,,"warehouse in a given time period. A bottleneck  (Throughput)= Total Units Processed ​/ Time Period , L=λ×W  (Little’s Law)",,,
+Avg. Order Processing Time by Region,,,Average Order Processing Time by Region= ∑(Order Processing Time for Each Order in the Region)/ Total Number of Orders in the Region,,,
+Return Due to Delivery Issues ,,Support queries,,,,
+,,,,,,
+KPI Name ( Payment & Transaction Failures),Data Set Used,Column Used ,Formula Used,,,
+Transaction Failure Rate,Data Own Site ,"Payment Successful, payment Attempted",Transaction Failure Rate (TFR)=( Number of Failed Transactions ​/ Total Number of Transactions) ×100,,,
+Most Common Failed Payment Method, E-Commerce,"Payment Failure , Payment Method",Failed Count (Payment Method)​ = ∑(Failed Transactions for each Payment Method),,,
+Chargeback Rate (Fraud Detection),,,Chargeback Rate= (Total Chargebacks / Total Transactions ) ×100,,,
+Top Reasons for Payment Failure,,,Failure Rate for Reason X=(Transactions Failed due to Reason X / Total Transactions Attempted) ×100,,,
+Failed Transactions Over Time,E-Commerce,"Payment Failure, Transaction Date ",Failed Transactions Over Time=(Number of Failed Transactions in Time Period / Total Transactions in Time Period) ×100,,,
+Payment Method vs. Success Rate,Data Own Site ,"Payment Method,Payment Successful",Success Rate=(Number of Successful Transactions / Total Number of Transactions) ×100,,,
+Chargeback Trend Analysis,,, Chargeback Ratio= (Total Chargebacks / Total Transactions)  ×100,,,
+Fraudulent Transaction Detection,,,P(fraud)= 1 / 1+e^-(w(0)+w(1)x(1)+w(2)x(2)+ ⋯+w (n)​x (n) ),,,
+ DIAGNOSTIC FILTERS NAME,,,,,,
+ FILTERS Name (Drop-off & Abandonment Analysis),,,,,,
+   Useful Filters,,,,,,
+Date Range,,,,,,
+Device Type,,,,,,
+Traffic Source,,,,,,
+Customer Segment ,,,,,,
+Product Category,,,,,,
+Page Type,,,,,,
+,,,,,,
+FILTERS Name( Churn & Retention Issues),,,,,,
+    Useful Filters,,,,,,
+Customer Segment,,,,,,
+Region/Location,,,,,,
+Time Since Last Purchase,,,,,,
+Acquisition Source,,,,,,
+Loyalty Program Status,,,,,,
+Subscription Plan,,,,,,
+,,,,,,
+FILTERS Name ( Pricing & Discount Impact),,,,,,
+     Useful Filters,,,,,,
+Discount Type,,,,,,
+Product Category,,,,,,
+Customer Segment,,,,,,
+Campaign/Promotion Period,,,,,,
+Price Band,,,,,,
+Region,,,,,,
+,,,,,,
+FILTERS Name ( Product Performance Issues),,,,,,
+      Useful Filters,,,,,,
+"Product Category/Sub-Category",,,,,,
+Return Reason,,,,,,
+Supplier/Vendor,,,,,,
+Location/Region,,,,,,
+Date Range,,,,,,
+Inventory Status,,,,,,
+,,,,,,
+FILTERS Name ( Channel-Specific Performance Issues),,,,,,
+       Useful Filters,,,,,,
+Sales Channel ,,,,,,
+Customer Segment,,,,,,
+Device Type,,,,,,
+Campaign Type,,,,,,
+Conversion Funnel Stage,,,,,,
+Geography,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+need this in Diagnostics,,,,,,
+Churn & Retention Issues,,,,,,
+--> cancellation Rate,,,,,,
+,,,,,,
+Pricing & Discount Impact,,,,,,
+"--> change in demand, change in price",,,,,,
+,,,,,,
+Product Performance Issues,,,,,,
+--> Product issues,,,,,,
+,,,,,,
+Channel-Specific Performance,,,,,,
+"--> order shipment time , order placement time",,,,,,
+,,,,,,
+Customer Service & Satisfaction,,,,,,
+"--> Avg. Response Time, Avg. Resolution Time, unresolved complaints",,,,,,
+,,,,,,
+Marketing & Campaign Effect,,,,,,
+"--> open Rate, Ad Spend, Conversions, Engagement Rate",,,,,,
+,,,,,,
+Logistics & Delivery Failures,,,,,,
+"--> Delivery Date, Order Delivered late(t/f), Reason for Delivery Delays, Order Dispatch time, order Received time, Return Due to Delivery Issues",,,,,,
+,,,,,,
+Payment & Transaction Failures,,,,,,
+"--> failed Transaction, Chargeback, Reason on payment Failure, Fraudulent Transaction",,,,,,
